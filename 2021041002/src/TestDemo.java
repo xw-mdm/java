@@ -6,6 +6,10 @@
  * Time: 14:02
  */
 
+/**
+ *
+ * 类的加载   加载到jvm中   双亲委派模型：
+ */
 /*class Person{
     private String name;
     private int age;
@@ -35,6 +39,7 @@
 
     public String getSex() {
         return sex;
+        static int i=0;   //无法编译   静态不能定义成局部变量
     }
 
     public void setSex(String sex) {
