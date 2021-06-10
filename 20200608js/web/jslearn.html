@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="0608.css">
+    <style>
+        img{
+            transition: all 0.3s linear;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+-->
+
+<!--
+1.<div onclick="clickDiv()">
+   hello
+</div>-->
+<!--<script src="0608.js">
+</script>-->
+<!--<div>hello</div>-->
+<!--<div>0</div>
+<button onclick="add()">按钮</button>-->
+<!--<a href="http://www.baidu.com">链接</a>
+<button onclick="changehref()">修改链接地址</button>
+<script >
+    function changehref() {
+        let a=document.querySelector('a')
+        a.href='http://www.sougou.com'
+        console.log(a.href);
+
+    }-->
+    //修改元素内容
+   /* function add() {
+
+        let div=document.querySelector("div");
+        let num=parseInt(div.innerHTML)
+        num+=1;
+        div.innerHTML=num;
+        console.log(div.innerHTML);
+    }
+*/
+
+/*
+    function  clickDiv() {
+        console.log("helo")
+    }
+
+    //选择所有的标签
+    let buttons=document.querySelectorAll("button");
+    for (let i = 0; i <buttons.length ; i++) {
+        buttons[i].onclick=clickDiv;
+    }
+    for (let button of buttons){
+        button.onvlick=clickDiv;
+    }
+    for(let i in buttons){
+        buttons[i].onclick=clickDiv;
+    }*/
+    //2.获取页面的对象
+    /*let divTag=document.querySelector("div");
+    //调用回调函数
+    divTag.onclick=clickDiv;*/
+
+   /* //3.先获取对象
+    let divTag=document.querySelector("div");
+    divTag.addEventListener("click",clickDiv);*/
+
+    //匿名函数自调用
+    /*(function () {
+        console.log("hello");
+    })();*/
+
+    //函数表达式
+   /* let fun=function () {
+        console.log("hello")
+
+    }
+    fun()
+    console.log(typeof (fun))*/
+    //对象   直接创建
+   /* let cat ={
+        name:'咪咪',
+        color:'橘色',
+        type:'中华田园猫',
+        eat:function(food) {
+
+            console.log("小猫再吃"+food);
+        }
+    };
+    cat.eat('鱼')
+    console.log(cat.name);
+    console.log(cat);*/
+    //通过构造函数创建
+   /* function Cat(name,color,type) {
+        this.name=name;
+        this.type=type;
+        this.color=color;
+        this.eat=function (food) {
+            console.log("小猫在吃"+food);
+        }
+    }
+    let cat=new Cat(
+        '小黑','白色','中华田园猫'
+    );
+
+    console.log(cat.color);
+    console.log(cat.eat('鱼'))*/
+
+    //获取对象、
+    //document。querySelect（“选择器”）
+
+</script>
+
+
+</body>
+</html>
