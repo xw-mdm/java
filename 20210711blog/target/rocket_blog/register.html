@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+            width: 315px;
+            height: 35px;
+            font-size: 20px;
+            text-indent: 10px;
+        }
+
+        .button {
+            color: #fff;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+        }
+
+        h3 {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h3>请注册博客系统</h3>
+    <form action="register" method="POST">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="submit" value="注册" class="button">
+    </form>
+</div>
+</body>
+
+</html>

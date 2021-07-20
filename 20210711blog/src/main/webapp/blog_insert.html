@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客编辑页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            display: block;
+            width: 600px;
+            height: 50px;
+            margin: 10px auto;
+            font-size: 20px;
+            text-indent: 10px;
+        }
+
+        textarea {
+            display: block;
+            width: 600px;
+            margin: 10px auto;
+            font-size: 16px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+<form action="blogInsert" method="POST">
+    <!-- 用 input 表示文章的标题 -->
+    <input type="text" name="title" class="title">
+    <!-- 用这个输入框表示正文 -->
+    <textarea name="content" rows="30"></textarea>
+    <input type="submit" value="发布博客" class="button">
+</form>
+</body>
+
+</html>
